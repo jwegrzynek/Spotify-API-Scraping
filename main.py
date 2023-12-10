@@ -67,7 +67,6 @@ print(get_popularity(auth_token, ids[50:100]))
 stop = time.time()
 print(stop - start)
 
-
 # %%
 
 start = time.time()
@@ -118,5 +117,6 @@ async def main():
             asyncio.create_task(task("One", work_queue)),
             asyncio.create_task(task("Two", work_queue)),
         )
+
 
 asyncio.run(main())
